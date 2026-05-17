@@ -1,28 +1,34 @@
-// FORMULÁRIO
-document.getElementById("formContato").addEventListener("submit", function(e) {
-    e.preventDefault();
+document.addEventListener('DOMContentLoaded', function() {
+    
+    const formulario = document.getElementById('meuFormulario');
 
-    let nome = document.getElementById("nome").value;
-    let email = document.getElementById("email").value;
-    let mensagem = document.getElementById("mensagem").value;
+    formulario.addEventListener('submit', function(event) {
+   
+        event.preventDefault();
 
-    if (nome === "" || email === "" || mensagem === "") {
-        alert("Preencha todos os campos!");
-        return;
-    }
 
-    if (!email.includes("@") || !email.includes(".")) {
-        alert("E-mail inválido!");
-        return;
-    }
+        const nome = document.getElementById('nome').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const mensagem = document.getElementById('mensagem').value.trim();
 
-    document.getElementById("msg").innerText = "Mensagem enviada com sucesso!";
+        if (nome === "" || email === "" || mensagem === "") {
+            alert("Por favor, preencha todos os campos obrigatórios.");
+            return; 
+        }
 
-    this.reset();
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            alert("Por favor, insira um e-mail válido (exemplo@dominio.com).");
+            return;
+        }
+
+
+        alert("Sucesso! " + nome + ", sua mensagem foi enviada.");
+
+
+        formulario.reset();
+        
+        console.log("Formulário enviado e limpo com sucesso.");
+    });
 });
-
-
-// TEMA CLARO/ESCURO
-function alternarTema() {
-    document.body.classList.toggle("dark");
-}
