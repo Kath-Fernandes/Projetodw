@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <title>Meu Portfólio - Kathleen Fernandes</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
     <header>
         <nav>
-            <h1>Kathleen Fernandes </h1>
-            <h6>Análise de Dados | Power BI, DAX, SQL, Python | Data Analytics & Modelagem </h6>
+            <h1>Kathleen Fernandes</h1>
+            <h6>Análise de Dados | Power BI, DAX, SQL, Python | Data Analytics & Modelagem</h6>
             <ul>
                 <li><a href="index.html">Sobre</a></li>
                 <li><a href="formacao.html">Formação</a></li>
@@ -19,50 +19,49 @@
             </ul>
         </nav>
     </header>
-<main class="container">
 
-    <section class="sobre-grid">
-        <div class="texto">
-            <h1 class="titulo"></h1>
+    <main class="container">
+        <section class="sobre-grid">
+            <div class="texto">
+                <p>Meus Contatos:</p>
+                <ul class="lista-redes">
+                    <li><a href="https://www.linkedin.com/in/kathleen-fernandes" target="_blank" class="link">Linkedin</a></li>
+                    <li><a href="https://github.com/Kath-Fernandes" target="_blank" class="link">GitHub</a></li>
+                </ul>
+            </div>
+        </section>
 
-            <p>
-            Meus Contatos:
-            </p>
-            <ul>
-            <a href="https://www.linkedin.com/in/kathleen-fernandes" class="link">Linkedin</a>
-            <br>
-            <a href="https://github.com/Kath-Fernandes" class="link">GitHub</a>
-            </ul>
-        </div>
-    </section>
-    <br>
-    <section id="contato">
-    <h2>Entre em Contato</h2>
-    <p>Preencha o formulário abaixo para conversarmos sobre novos projetos.</p>
+        <br>
 
-    <form id="meuFormulario">
-        <div class="campo">
-            <label for="nome">Nome Completo:</label>
-            <input type="text" id="nome" placeholder="Digite seu nome...">
-        </div>
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <p>Preencha o formulário abaixo para conversarmos sobre novos projetos.</p>
 
-        <div class="campo">
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" placeholder="exemplo@dominio.com">
-        </div>
+            <form id="meuFormulario">
+                <div class="campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome..." required>
+                </div>
 
-        <div class="campo">
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" rows="5" placeholder="Como posso ajudar?"></textarea>
-        </div>
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" placeholder="exemplo@dominio.com" required>
+                </div>
 
-        <button type="submit" id="btnEnviar">Enviar Mensagem</button>
-    </form>
-</section>
-</main>
+                <div class="campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" rows="5" placeholder="Como posso ajudar?" required></textarea>
+                </div>
+
+                <button type="submit" id="btnEnviar">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
     <footer>
-        <p class="rodape"> Desenvolvido por Kathleen Fernandes • 2026</p>   
+        <p class="rodape">Desenvolvido por Kathleen Fernandes • 2026</p>   
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
