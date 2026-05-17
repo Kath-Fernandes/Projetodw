@@ -153,7 +153,7 @@ nav ul li a:hover {
 
 .rodape {
     text-align: right; /* Alinha o texto à direita */
-    padding-right: 20px; /* Opcional: evita que o texto encoste na borda da tela */
+    padding-right: 20px; 
 }
 
 #contato {
@@ -161,15 +161,15 @@ nav ul li a:hover {
     flex-direction: column; /* Coloca o título e o formulário em coluna */
     align-items: center;    /* Centraliza os elementos filhos horizontalmente */
     justify-content: center;
-    min-height: 80vh;       /* Opcional: ajuda a centralizar verticalmente na tela */
+    min-height: 80vh;       
     padding: 20px;
 }
 
 /* Define uma largura máxima para o formulário não ficar muito esticado */
 #meuFormulario {
     width: 100%;
-    max-width: 500px;       /* Tamanho ideal para formulários robustos */
-    background-color: #f9f9f9; /* Um fundo leve para destacar o formulário */
+    max-width: 500px;       /* Tamanho ideal para formulários */
+    background-color: #f9f9f9; 
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave para profundidade */
@@ -193,12 +193,12 @@ input, textarea {
     flex-direction: column; /* Garante que o label fique acima do input */
 }
 
-/* Centraliza o botão ou faz com que ocupe a largura total do formulário */
+/* Centraliza o botão  */
 #btnEnviar {
     width: 100%;
     padding: 12px;
     cursor: pointer;
-    background-color: #004080;
+    background-color: #8b5e3c;
     color: white;
     border: none;
     font-weight: bold;
